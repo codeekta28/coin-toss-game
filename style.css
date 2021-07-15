@@ -1,0 +1,78 @@
+@keyframes spin {
+    0% {background: url("head.png")}
+    
+    25% {background: url("tails.png")}
+    
+    50% {background: url("head.png")}
+    
+    75% {background: url("tails.png")}
+    
+    100% {background: url("head.png")}
+}
+
+
+#image{
+    background: url("head.png");
+    width: 227px;
+    height: 337px;
+    
+}
+
+.animate{
+    background: url("head.png");
+    width: 227px;
+    height: 337px;
+    animation-name: spin;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+}
+
+.canvas{
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+#center{
+    width: 227px;
+    margin: 15px auto;
+}
+
+.selection, #player, #computer,#draw{
+    display: inline;
+    margin: 13px;
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.newGame{
+    margin: 15px;
+}
+#player-selection,#computer-selection,#player-score,#computer-score{
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+}
+#computer-selection{
+    color: red;
+}
+#computer-score{
+    color: red;
+}
+.btn{
+    cursor: pointer;
+}
+#winner{
+    font-size: 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-style: italic;
+    padding: 10px;
+    color: white;
+}
